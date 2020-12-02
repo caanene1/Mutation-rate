@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# *********************NOTE*************
+# The values to the variable should be assigned in the format as it is now, no quotes, semicolon, or any comments at the end. Because, this file will be parsed in other scripts to extract the variable 
+# **************************************
+
+# main path to the directory where the project is located
+# example: '/Downloads/project'
+path=/data/BCI-Haemato/Firat/AnthonyFiratFiles/MuataRates
+
+# path for mutation data
+mutpath=$path/dataset/mutations
+
+# path for ERBS files
+erbsPath=$path/dataset/cordinates
+
+# hg19 fasta sequence and co-ordinates
+hg19Fasta=/data/BCI-Haemato/Refs/hg19/hg19.fa
+hg19genome=/data/BCI-Haemato/Firat/AnthonyFiratFiles/MuataRates/hg19genomeTrue.size
+
+# CDS regions file and other filter related files
+cds=$path/dataset/FilterFiles/cds_sorted.Regions
+blackListV1=$path/dataset/FilterFiles/wgEncodeDacANDDuke.bed
+mappable36mer=$path/dataset/FilterFiles/wgEncodeCrgMapabilityAlign36merNONUNIQUES_mergedRegions.bed
+allTFBSmerged=/data/BCI-Haemato/Firat/AnthonyFiratFiles/MuataRates/otherAnnotations/dummy_tf_cord.bed.gz
+
+# flank from mid-point
+flank=1000
